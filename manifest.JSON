@@ -1,0 +1,15 @@
+{
+  "name": "CricketDex",
+  "short_name": "CricketDex",
+  "start_url": "cricket web page.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "icons": [
+    {
+      "src": "player photos/cricket image.jfif",
+      "sizes": "200x200",
+      "type": "app/jpeg"
+    }
+  ]
+}

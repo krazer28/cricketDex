@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#e5e5e5;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/* CARD */
+
+.card{
+    width:360px;
+    background:white;
+    border:5px solid black;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* TOP */
+
+.top{
+    position:relative;
+    height:190px;
+    border-bottom:5px solid black;
+    padding:15px;
+}
+
+/* IMAGE */
+
+.photo{
+    width:130px;
+    height:130px;
+    border:5px solid black;
+    border-radius:50%;
+    overflow:hidden;
+    position:absolute;
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#ddd;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* PLAYER NAME */
+
+.player-name{
+    position:absolute;
+    top:10px;
+    left:12px;
+    font-size:20px;
+    font-weight:bold;
+    width:90px;
+    line-height:1.2;
+}
+
+/* ID */
+
+.player-id{
+    position:absolute;
+    top:15px;
+    right:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* HAND TYPE */
+
+.handtype{
+    position:absolute;
+    bottom:15px;
+    left:12px;
+    font-size:14px;
+    font-weight:bold;
+    width:100px;
+    line-height:1.3;
+}
+
+/* TYPE */
+
+.type{
+    position:absolute;
+    bottom:20px;
+    right:12px;
+    font-size:14px;
+    font-weight:bold;
+    width:120px;
+    text-align:right;
+    line-height:1.3;
+}
+
+/* MIDDLE */
+
+.middle{
+    display:flex;
+    border-bottom:5px solid black;
+}
+
+/* LEFT STATS */
+
+.left-stats{
+    width:50%;
+    border-right:5px solid black;
+    padding:25px 18px;
+}
+
+/* RIGHT STATS */
+
+.right-stats{
+    width:50%;
+    padding:25px 18px;
+}
+
+/* STAT */
+
+.stat{
+    margin-bottom:18px;
+    font-size:17px;
+    font-weight:bold;
+    line-height:1.4;
+}
+
+/* BOTTOM */
+
+.bottom{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    text-align:center;
+    padding:15px 5px;
+    font-size:16px;
+    font-weight:bold;
+    gap:5px;
+}
+
+.bottom-stat{
+    text-align:center;
+    line-height:1.4;
+}
+
+.back-btn{
+    position:absolute;
+    left: 0px;
+    top:90%;
+    transform:translateY(-50%);
+    border: #000000;
+    padding:12px 22px;
+    border-radius:999px;
+    background:#bebdbd;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+    .card{
+        width:100%;
+        max-width:340px;
+    }
+
+    .player-name{
+        font-size:18px;
+    }
+
+    .stat{
+        font-size:14px;
+    }
+
+    .bottom{
+        font-size:18px;
+    }
+}
