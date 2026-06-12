@@ -132,8 +132,6 @@ document.getElementById(
     "image"
 ).src =
 
-"player photos/" +
-
 player.name
 .toLowerCase()
 
