@@ -1,6 +1,6 @@
 {
   "name": "cricketDex",
-  "short_name": "CricketCards",
+  "short_name": "CricketDex",
   "description": "Browse and search legendary cricket players and their details.",
   "start_url": "./",
   "display": "standalone",
