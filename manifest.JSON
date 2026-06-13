@@ -1,20 +1,21 @@
 {
   "name": "Cricket Cards",
   "short_name": "CricketCards",
+  "description": "Browse and search legendary cricket players and their details.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0066cc",
   "icons": [
     {
-      "src": "cricket image.jfif",
+      "src": "crickrt image 192.png",
       "sizes": "192x192",
-      "type": "image/jfif"
+      "type": "image/png"
     },
     {
-      "src": "cricket image.jfif",
+      "src": "cricket image 512.png",
       "sizes": "512x512",
-      "type": "image/jfif"
+      "type": "image/png"
     }
   ]
 }
