@@ -1,11 +1,7 @@
-const CACHE_NAME = "cricketdex-v1";
+const CACHE_NAME = "cricketDex-v1";
 
 const filesToCache = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/script.js",
-  "/players.js"
+    "./"
 ];
 
 self.addEventListener("install", event => {
