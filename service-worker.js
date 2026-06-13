@@ -2,7 +2,7 @@ const CACHE_NAME = "cricketdex-v1";
 
 const filesToCache = [
   "/",
-  "/cricke web page.html",
+  "/index.html",
   "/style.css",
   "/script.js",
   "/players.js"
