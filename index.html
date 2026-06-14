@@ -477,7 +477,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("./service-worker.js")
+      .register("service-worker.js")
       .then(reg => {
         console.log("✅ Service Worker Registered");
         console.log(reg);
