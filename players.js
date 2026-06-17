@@ -1472,7 +1472,7 @@ const players = [
     battingAverage: 32,
     battingStrikeRate: 85,
     highestBowlingSpeed: "135 km/h"
-}
+},
     {
     id: 68,
     name: "Alec Stewart",
