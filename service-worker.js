@@ -1,4 +1,4 @@
-const CACHE_NAME = "cricketDex-v1";
+const CACHE_NAME = "cricketDex-v1.1";
 
 const filesToCache = [
     "./",
