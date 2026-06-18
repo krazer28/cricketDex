@@ -119,7 +119,7 @@ player.fifties
 );
 
 setText(
-"hundreds",
+hundreds,
 player.hundreds
 );
 
