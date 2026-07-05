@@ -639,14 +639,6 @@ allPlayersBtn.onclick = function(e){
         "show"
     );
 };
-
-    /* COMPARE BUTTON */
-
-    typesBtn.onclick = function(e){
-        inner html`
-        <div id="compareUnavailable" class="compare-unavailable">
-    CURRENTLY UNAVAILABLE
-</div>`
     
 /* TYPES BUTTON */
 
