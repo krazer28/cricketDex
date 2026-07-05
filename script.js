@@ -640,6 +640,12 @@ allPlayersBtn.onclick = function(e){
     );
 };
 
+    /* COMPARE BUTTON */
+
+    compareBtn.onclick = function(e){
+        document.write("currently unavailable")
+    }
+
 /* TYPES BUTTON */
 
 typesBtn.onclick = function(e){
