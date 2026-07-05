@@ -639,6 +639,24 @@ allPlayersBtn.onclick = function(e){
         "show"
     );
 };
+
+    /* COMPARE BUTTON */
+
+    document.getElementById("compareBtn")
+.addEventListener("click", () => {
+
+    const box =
+    document.getElementById(
+        "compareUnavailable"
+    );
+
+    box.style.display = "block";
+
+    setTimeout(() => {
+        box.style.display = "none";
+    }, 2000);
+
+});
     
 /* TYPES BUTTON */
 
