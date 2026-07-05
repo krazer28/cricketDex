@@ -495,7 +495,7 @@ content="CricketDex, cricket cards, cricket players, cricket legends">
 <script>
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-   navigator.serviceWorker.register("/cricketDex/service-worker.js")
+   navigator.serviceWorker.register("service-worker.js")
       .then(reg => {
         console.log("✅ Service Worker Registered");
         console.log(reg);
