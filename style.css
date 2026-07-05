@@ -279,7 +279,7 @@ body{
     transform:scale(1.2);
 }
 
-.compare-unavailable{
+.compareUnavailable{
     display: none;
 
     position: fixed;
