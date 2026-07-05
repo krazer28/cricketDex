@@ -642,21 +642,12 @@ allPlayersBtn.onclick = function(e){
 
     /* COMPARE BUTTON */
 
-    document.getElementById("compareBtn")
-.addEventListener("click", () => {
-
-    const box =
-    document.getElementById(
-        "compareUnavailable"
-    );
-
-    box.style.display = "block";
-
-    setTimeout(() => {
-        box.style.display = "none";
-    }, 2000);
-
-});
+    typesBtn.onclick = function(e){
+        inner html`
+        <div id="compareUnavailable" class="compare-unavailable">
+    CURRENTLY UNAVAILABLE
+</div>`
+    
 /* TYPES BUTTON */
 
 typesBtn.onclick = function(e){
