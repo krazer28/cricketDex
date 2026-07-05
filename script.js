@@ -642,10 +642,21 @@ allPlayersBtn.onclick = function(e){
 
     /* COMPARE BUTTON */
 
-    compareBtn.onclick = function(e){
-        document.write("currently unavailable")
-    }
+    document.getElementById("compareBtn")
+.addEventListener("click", () => {
 
+    const box =
+    document.getElementById(
+        "compareUnavailable"
+    );
+
+    box.style.display = "block";
+
+    setTimeout(() => {
+        box.style.display = "none";
+    }, 2000);
+
+});
 /* TYPES BUTTON */
 
 typesBtn.onclick = function(e){
