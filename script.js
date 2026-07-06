@@ -648,7 +648,7 @@ allPlayersBtn.onclick = function(e){
 
         /* MY XI BUTTON */
 
-    MY XI.onclick = function(e){
+   XIBtn.onclick = function(e){
         alert("currently unavailable")
     }
     
