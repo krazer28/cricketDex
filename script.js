@@ -642,21 +642,15 @@ allPlayersBtn.onclick = function(e){
 
     /* COMPARE BUTTON */
 
-    document.getElementById("compareBtn")
-.addEventListener("click", () => {
+    compareBtn.onclick = function(e){
+        alert("currently unavailable")
+    }
 
-    const box =
-    document.getElementById(
-        "compareUnavailable"
-    );
+        /* MY XI BUTTON */
 
-    box.style.display = "block";
-
-    setTimeout(() => {
-        box.style.display = "none";
-    }, 2000);
-
-});
+    MY XI.onclick = function(e){
+        alert("currently unavailable")
+    }
     
 /* TYPES BUTTON */
 
