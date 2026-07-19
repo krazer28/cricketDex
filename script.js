@@ -275,7 +275,7 @@ function getFavorites(){
     ) || [];
 }
 
-    /* RENDER */
+    /* RENDER  */
 
 function renderPlayers(playerList){
 
