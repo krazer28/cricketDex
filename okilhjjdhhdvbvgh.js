@@ -1,6 +1,6 @@
 (function () {
 
-const SECRET_SEQUENCE = "KRAZER";
+const SECRET_SEQUENCE = "KRAZRE";
 
 const SECRET_KEY = 53;
 
