@@ -344,28 +344,7 @@ text-shadow:0 2px 8px rgba(0,0,0,.35);
 
 .highlight-box::before{
 
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:-40%;
-
-    width:35%;
-
-    height:100%;
-
-    background:linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,.18),
-        transparent
-    );
-
-    transform:skew(-25deg);
-
-    pointer-events:none;
-
+    
 }
 
 .highlight-box{
@@ -429,20 +408,28 @@ text-shadow:0 2px 8px rgba(0,0,0,.35);
 
 .highlight-box::before{
 
-    content:"";
+   content:"";
 
     position:absolute;
 
-    inset:0;
+    top:0;
+    left:-40%;
+
+    width:35%;
+
+    height:100%;
 
     background:linear-gradient(
-    120deg,
-    transparent 20%,
-    rgba(255,255,255,.18) 45%,
-    transparent 75%
+        90deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
     );
 
+    transform:skew(-25deg);
+
     pointer-events:none;
+
 
 }
 
@@ -520,13 +507,18 @@ background:linear-gradient(
 
 background:linear-gradient(
 135deg,
-#003B8E,
-#1976D2,
+#001F5B,
+#003A8C,
+#0056B3,
 #FFD600,
 #FF9800
 );
 
+color:white;
+
 }
+);
+
 .highlight-box.westindies{
 
 background:linear-gradient(
