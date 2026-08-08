@@ -343,14 +343,54 @@ text-shadow:0 2px 8px rgba(0,0,0,.35);
 
 /* PLAYER BOX */
 
+.highlight-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-40%;
+
+    width:35%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+    transform:skew(-25deg);
+
+    pointer-events:none;
+
+}
+
 .highlight-box{
     width:100%;
     max-width:700px;
-    padding:18px 24px;
+    position:relative;
+    overflow:hidden;
+    padding:16px 24px;
     transform:skew(-10deg);
-    border-radius:10px;
-    border:3px solid rgba(255,255,255,0.35);
-    padding:14px 20px;
+    border-radius:16px;
+    border:none;
+    box-shadow:0 10px 22px rgba(0,0,0,.35);
+    transition:.35s;
+
+}
+
+.highlight-box:hover{
+
+    transform:skew(-10deg) translateY(-4px);
+
+    box-shadow:
+        0 16px 32px rgba(0,0,0,.45);
+
+}
 
 }
 
