@@ -388,16 +388,7 @@ text-shadow:0 2px 8px rgba(0,0,0,.35);
 
 .card:hover .highlight-box{
     transform:skew(-10deg) translateY(-4px);
-}
-
-.highlight-box:hover{
-
-    transform:skew(-10deg) translateY(-4px);
-
-    box-shadow:
-        0 16px 32px rgba(0,0,0,.45);
-
-}
+    box-shadow:0 16px 32px rgba(0,0,0,.45);
 
 }
 
@@ -421,11 +412,9 @@ text-shadow:0 2px 8px rgba(0,0,0,.35);
     overflow:hidden;
     color:white;
     border-radius:18px;
-    border:2px solid rgba(255,255,255,.18);
-
+    border:2px solid transparent;
     box-shadow:
     0 10px 25px rgba(0,0,0,.35);
-
     transition:.35s;
 }
 
