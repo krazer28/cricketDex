@@ -942,7 +942,7 @@ function initializeSecretSystem(){
 
     const favButton =
         document.querySelector(
-            "#favoritesButton"
+            "#favoritesBtn"
         );
 
     if(favButton){
