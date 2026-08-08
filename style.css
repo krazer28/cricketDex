@@ -337,7 +337,6 @@ text-shadow:0 2px 8px rgba(0,0,0,.35);
 }
 
 .card:hover{
-    transform:scale(1.01);
     z-index:1;
 }
 
@@ -381,6 +380,14 @@ text-shadow:0 2px 8px rgba(0,0,0,.35);
     box-shadow:0 10px 22px rgba(0,0,0,.35);
     transition:.35s;
 
+}
+
+.highlight-box{
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover .highlight-box{
+    transform:skew(-10deg) translateY(-4px);
 }
 
 .highlight-box:hover{
