@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Compare - CricketDex</title>
+
+<link rel="stylesheet"
+href="compare.css">
+
+</head>
+
+<body>
+
+<button class="back-btn"
+     onclick="history.back()" id="back">
+
+               ← Back
+
+            </button>
+
+<div class="compare-wrap">
+
+    <h1 class="compare-title">COMPARE</h1>
+
+    <div class="picker-row">
+
+        <div class="picker" id="pickerA">
+
+            <input type="text"
+            id="searchA"
+            placeholder="Search player A...">
+
+            <div class="suggestions"
+            id="suggestionsA"></div>
+
+            <div class="picked-card"
+            id="pickedA"></div>
+
+        </div>
+
+        <div class="vs-label">VS</div>
+
+        <div class="picker" id="pickerB">
+
+            <input type="text"
+            id="searchB"
+            placeholder="Search player B...">
+
+            <div class="suggestions"
+            id="suggestionsB"></div>
+
+            <div class="picked-card"
+            id="pickedB"></div>
+
+        </div>
+
+    </div>
+
+    <button id="startCompareBtn"
+    class="compare-btn" disabled>
+
+        Compare
+
+    </button>
+
+    <div class="scoreboard"
+    id="scoreboard">
+
+        <span class="score-name"
+        id="scoreNameA"></span>
+
+        <span class="score-val"
+        id="scoreValA">0</span>
+
+        <span class="score-dash">-</span>
+
+        <span class="score-val"
+        id="scoreValB">0</span>
+
+        <span class="score-name"
+        id="scoreNameB"></span>
+
+    </div>
+
+    <div class="stat-rows"
+    id="statRows"></div>
+
+    <div class="result-banner"
+    id="resultBanner"></div>
+
+</div>
+
+<script src="players.js"></script>
+
+<script src="compare.js"></script>
+
+</body>
+
+</html>

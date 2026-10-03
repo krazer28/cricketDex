@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>My XI - CricketDex</title>
+
+<link rel="stylesheet"
+href="myxi.css">
+
+</head>
+
+<body>
+
+<button class="back-btn"
+     onclick="history.back()" id="back">
+
+               ← Back
+
+            </button>
+
+<div class="xi-wrap">
+
+    <h1 class="xi-title">MY XI</h1>
+
+    <p class="xi-sub" id="xiCount">0 / 11 players</p>
+
+    <div class="xi-warnings"
+    id="xiWarnings"></div>
+
+    <div class="xi-search">
+
+        <input type="text"
+        id="xiSearchBox"
+        placeholder="Search a player to add...">
+
+        <div class="suggestions"
+        id="xiSuggestions"></div>
+
+    </div>
+
+    <div class="xi-grid"
+    id="xiGrid"></div>
+
+    <div class="xi-empty"
+    id="xiEmpty">
+
+        No players in your XI yet. Search above to add one.
+
+    </div>
+
+</div>
+
+<script src="players.js"></script>
+
+<script src="myxi.js"></script>
+
+</body>
+
+</html>
