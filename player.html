@@ -24,105 +24,145 @@ href="playercard.css">
 
             </button>
 
-<div class="card">
+<div class="card" id="card">
 
     <div class="top">
+
+        <div class="top-bar">
+
+            <div class="country"
+            id="playerCountry"></div>
+
+            <div class="id-badge">
+
+                <span class="id-label">ID</span>
+
+                <span class="player-id"
+                id="playerId"></span>
+
+            </div>
+
+        </div>
+
+        <div class="photo" id="photo">
+
+            <img id="image" alt="">
+
+            <span class="photo-fallback"
+            id="photoFallback"></span>
+
+        </div>
 
         <div class="player-name"
         id="playerName"></div>
 
-        <div class="player-id"
-        id="playerId"></div>
-
-        <div class="photo">
-
-            <img id="image">
-
-        </div>
-
-        <div class="handtype"
-        id="handType"></div>
-
         <div class="type"
         id="playerType"></div>
 
-    </div>
+        <div class="tag"
+        id="playerTag" hidden></div>
 
-    <div class="middle">
+        <div class="style-box">
 
-        <div class="left-stats">
+            <div class="style-label">Playing Style</div>
 
-            <div class="stat"
-            id="matches"></div>
-
-            <div class="stat"
-            id="runs"></div>
-
-            <div class="stat"
-            id="highest"></div>
-
-            <div class="stat"
-            id="catches"></div>
-
-        </div>
-
-        <div class="right-stats">
-
-            <div class="stat"
-            id="wickets"></div>
-
-            <div class="stat"
-            id="economy"></div>
-
-            <div class="stat"
-            id="average"></div>
-
-            <div class="stat"
-            id="strikeRate"></div>
+            <div class="handtype"
+            id="handType"></div>
 
         </div>
 
     </div>
 
-    <div class="bottom">
+    <div class="panel" id="performance">
 
-        <div class="bottom-stat">
+        <div class="panel-title">Performance</div>
 
-            <div>4s</div>
+        <div class="stat-grid">
 
-            <div id="fours"></div>
+            <div class="stat">
+                <div class="stat-value" id="matches"></div>
+                <div class="stat-label">Matches</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-value" id="runs"></div>
+                <div class="stat-label">Runs</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-value" id="wickets"></div>
+                <div class="stat-label">Wickets</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-value" id="average"></div>
+                <div class="stat-label">Average</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-value" id="strikeRate"></div>
+                <div class="stat-label">SR</div>
+            </div>
+
+            <div class="stat" id="economyStat">
+                <div class="stat-value" id="economy"></div>
+                <div class="stat-label">Economy</div>
+            </div>
 
         </div>
 
-        <div class="bottom-stat">
+    </div>
 
-            <div>6s</div>
+    <div class="panel" id="records">
 
-            <div id="sixes"></div>
+        <div class="panel-title">Records</div>
+
+        <div class="stat-grid">
+
+            <div class="stat">
+                <div class="stat-value" id="highest"></div>
+                <div class="stat-label">Highest</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-value" id="fours"></div>
+                <div class="stat-label">4s</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-value" id="sixes"></div>
+                <div class="stat-label">6s</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-value" id="fifties"></div>
+                <div class="stat-label">50s</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-value" id="hundreds"></div>
+                <div class="stat-label">100s</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-value" id="catches"></div>
+                <div class="stat-label">Catches</div>
+            </div>
 
         </div>
 
-        <div class="bottom-stat">
+    </div>
 
-            <div>50s</div>
+    <div class="panel" id="additional">
 
-            <div id="fifties"></div>
+        <div class="panel-title">Additional</div>
 
-        </div>
+        <div class="stat-grid">
 
-        <div class="bottom-stat">
-
-            <div>100s</div>
-
-            <div id="hundreds"></div>
-
-        </div>
-
-        <div class="bottom-stat">
-
-            <div>Speed</div>
-
-            <div id="speed"></div>
+            <div class="stat stat-wide">
+                <div class="stat-value" id="speed"></div>
+                <div class="stat-label">Speed</div>
+            </div>
 
         </div>
 
