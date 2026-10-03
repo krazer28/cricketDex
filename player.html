@@ -24,7 +24,14 @@ href="playercard.css">
 
             </button>
 
-<div class="card" id="card">
+<div class="card" id="card"
+role="button" tabindex="0"
+aria-pressed="false"
+aria-label="Player card. Press to flip sides.">
+
+<div class="card-inner">
+
+<div class="card-face card-front">
 
     <div class="top">
 
@@ -58,9 +65,6 @@ href="playercard.css">
 
         <div class="type"
         id="playerType"></div>
-
-        <div class="tag"
-        id="playerTag" hidden></div>
 
         <div class="style-box">
 
@@ -113,60 +117,89 @@ href="playercard.css">
 
     </div>
 
-    <div class="panel" id="records">
+    <div class="flip-hint">Tap to flip</div>
 
-        <div class="panel-title">Records</div>
+</div>
 
-        <div class="stat-grid">
+<div class="card-face card-back">
 
-            <div class="stat">
-                <div class="stat-value" id="highest"></div>
-                <div class="stat-label">Highest</div>
+    <div class="back-body">
+
+        <div class="back-head">
+
+            <div class="country"
+            id="backCountry"></div>
+
+            <div class="back-name"
+            id="backName"></div>
+
+            <div class="tag"
+            id="playerTag" hidden></div>
+
+        </div>
+
+        <div class="panel" id="records">
+
+            <div class="panel-title">Records</div>
+
+            <div class="stat-grid">
+
+                <div class="stat">
+                    <div class="stat-value" id="highest"></div>
+                    <div class="stat-label">Highest</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-value" id="fours"></div>
+                    <div class="stat-label">4s</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-value" id="sixes"></div>
+                    <div class="stat-label">6s</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-value" id="fifties"></div>
+                    <div class="stat-label">50s</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-value" id="hundreds"></div>
+                    <div class="stat-label">100s</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-value" id="catches"></div>
+                    <div class="stat-label">Catches</div>
+                </div>
+
             </div>
 
-            <div class="stat">
-                <div class="stat-value" id="fours"></div>
-                <div class="stat-label">4s</div>
-            </div>
+        </div>
 
-            <div class="stat">
-                <div class="stat-value" id="sixes"></div>
-                <div class="stat-label">6s</div>
-            </div>
+        <div class="panel" id="additional">
 
-            <div class="stat">
-                <div class="stat-value" id="fifties"></div>
-                <div class="stat-label">50s</div>
-            </div>
+            <div class="panel-title">Additional</div>
 
-            <div class="stat">
-                <div class="stat-value" id="hundreds"></div>
-                <div class="stat-label">100s</div>
-            </div>
+            <div class="stat-grid">
 
-            <div class="stat">
-                <div class="stat-value" id="catches"></div>
-                <div class="stat-label">Catches</div>
+                <div class="stat stat-wide">
+                    <div class="stat-value" id="speed"></div>
+                    <div class="stat-label">Speed</div>
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
-    <div class="panel" id="additional">
+    <div class="flip-hint">Tap to flip back</div>
 
-        <div class="panel-title">Additional</div>
+</div>
 
-        <div class="stat-grid">
-
-            <div class="stat stat-wide">
-                <div class="stat-value" id="speed"></div>
-                <div class="stat-label">Speed</div>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
