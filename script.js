@@ -642,15 +642,14 @@ allPlayersBtn.onclick = function(e){
 
     /* COMPARE BUTTON */
 
-    compareBtn.onclick = function(e){
-        alert("currently unavailable")
-    }
+ compareBtn.onclick = function(e){
+    window.location.href = "compare.html";
+}
+    /* MYXI BUTTON */
 
-        /* MY XI BUTTON */
-
-   XIBtn.onclick = function(e){
-        alert("currently unavailable")
-    }
+XIBtn.onclick = function(e){
+    window.location.href = "myxi.html";
+}
     
 /* TYPES BUTTON */
 
