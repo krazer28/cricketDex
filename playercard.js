@@ -70,10 +70,22 @@ player.country ||
 ""
 );
 
+setText(
+"backCountry",
+countryNames[countryKey] ||
+player.country ||
+""
+);
+
 /* ---------- IDENTITY ---------- */
 
 setText(
 "playerName",
+player.name
+);
+
+setText(
+"backName",
 player.name
 );
 
@@ -264,3 +276,45 @@ player.name
 +
 
 ".jfif";
+
+/* ---------- FLIP (tap / click / Enter / Space) ---------- */
+
+const flipCardEl =
+document.getElementById(
+"card"
+);
+
+function flipCard(){
+
+    const flipped =
+    flipCardEl.classList.toggle(
+    "flipped"
+    );
+
+    flipCardEl.setAttribute(
+    "aria-pressed",
+    flipped
+    );
+}
+
+flipCardEl.addEventListener(
+"click",
+flipCard
+);
+
+flipCardEl.addEventListener(
+"keydown",
+function(e){
+
+    if(
+    e.key === "Enter" ||
+    e.key === " " ||
+    e.key === "Spacebar"
+    ){
+
+        e.preventDefault();
+
+        flipCard();
+    }
+}
+);
