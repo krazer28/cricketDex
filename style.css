@@ -516,18 +516,20 @@ background:linear-gradient(
 
 color:white;
 
+};
+
+.highlight-box.westindies {
+    color: #FFFFFF;
+    background: linear-gradient(
+        135deg,
+        #3B001C 0%,
+        #6A0032 35%,
+        #A51C50 70%,
+        #D4AF37 100%
+    );
+    border: 2px solid #D4AF37;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
-);
-
-.highlight-box.westindies{
-
-background:linear-gradient(
-135deg,
-#5A002C,
-#8B1538,
-#C59D5F,
-#5A002C
-);
 
 }
 .highlight-box.bangladesh{
