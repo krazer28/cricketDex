@@ -284,9 +284,26 @@ function renderPlayers(playerList){
 
     container.innerHTML = "";
 
-    playerList.forEach(player => {
+    playerList.forEach((player, index) => {
 
         createPlayerCard(player);
+
+        // Insert one in-feed AdSense placement after the 20th player.
+        if (index === 19) {
+            const ad = document.createElement("div");
+            ad.className = "cricketdex-ad cricketdex-feed-ad";
+            ad.setAttribute("aria-label", "Advertisement");
+            ad.innerHTML = `
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-1387397726488435"
+                     data-ad-slot="5291170256"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+            `;
+            container.appendChild(ad);
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        }
     });
     const favButtons =
 
