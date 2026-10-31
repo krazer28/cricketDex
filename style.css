@@ -741,3 +741,54 @@ h2{
 #secretPopup{
 
 }
+
+
+/* CricketDex AdSense placements */
+.cricketdex-ad {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 90px;
+    margin: 18px auto;
+    clear: both;
+    text-align: center;
+    overflow: hidden;
+}
+.cricketdex-ad ins.adsbygoogle {
+    display: block;
+    width: 100%;
+    min-height: 90px;
+}
+.cricketdex-feed-ad {
+    flex: 0 0 100%;
+    margin: 18px 0;
+}
+.cricketdex-side-ad {
+    display: none;
+}
+@media (min-width: 1760px) {
+    .cricketdex-side-ad {
+        display: block;
+        position: fixed;
+        top: 110px;
+        width: 360px;
+        height: 800px;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .cricketdex-side-ad-left {
+        left: calc(50% - 880px);
+    }
+    .cricketdex-side-ad-right {
+        right: calc(50% - 880px);
+    }
+}
+@media (max-width: 600px) {
+    .cricketdex-ad {
+        min-height: 100px;
+        margin: 14px auto;
+    }
+    .cricketdex-ad ins.adsbygoogle {
+        min-height: 100px;
+    }
+}
